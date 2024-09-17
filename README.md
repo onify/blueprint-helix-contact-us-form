@@ -4,7 +4,7 @@
 
 # Onify Blueprint: Helix - Contact us form
 
-This Blueprint for Onify Helix showcases how to create a simple "Contact Us" form using Onify Helix components. The form includes fields for first name, last name, email, industry, and service interest, as well as a radio button option for requesting a video demo. It validates user inputs to ensure all required fields are correctly filled before submission. Upon successful submission, it displays a confirmation alert thanking the user and confirming receipt of their inquiry. The form manages the submission state and automatically resets after processing.
+This Blueprint for Onify Helix showcases how to create a simple "Contact Us" form using Vuetify and Onify Helix components. The form includes fields for first name, last name, email, industry, and service interest, as well as a radio button option for requesting a video demo. It validates user inputs to ensure all required fields are correctly filled before submission. Upon successful submission, it displays a confirmation alert thanking the user and confirming receipt of their inquiry. The form manages the submission state and automatically resets after processing.
 
 ![Onify Blueprint: Onify Helix - Contact us form](blueprint.png "Blueprint")
 
