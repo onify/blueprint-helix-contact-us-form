@@ -6,7 +6,6 @@
 * alerts upon successful submission.
 *
 * @template
-* - h-page-head: Displays the page title.
 * - h-page-container: Container for the page content.
 * - h-page-title: Displays the main title of the page.
 * - h-page-description: Displays a description of the page.
@@ -82,7 +81,7 @@
 </template>
 
 <script setup>
-const { hAlerts } = useHCommon();
+const { hAlerts } = useHCommon(); // Onify Helix
 
 const formData = reactive({});
 const isValid = ref(false);
