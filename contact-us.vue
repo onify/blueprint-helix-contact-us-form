@@ -93,7 +93,8 @@ const onSubmit = async () => {
   if (vFormRef.value && vFormRef.value.validate()) {
     isSubmitting.value = true;
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000)); // TODO: Replace with flow to submit form data
+      await new Promise(resolve => setTimeout(resolve, 1000)); // TODO: For testing purposes only
+      //const response = await hHttpRequest({ url: 'my/workflows/run/contact-us', method: 'post', payload: formData }).response(); // TODO: Replace with actual workflow
       hAlerts.hAddAlert({
         type: 'info',
         title: `Thank you ${formData.firstName}!`,
@@ -101,6 +102,8 @@ const onSubmit = async () => {
         timeout: 5000
       });
       vFormRef.value.reset();
+    } catch (err) {
+      /* Do some error handling */
     } finally {
       isSubmitting.value = false;
     }
